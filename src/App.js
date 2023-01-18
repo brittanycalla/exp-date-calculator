@@ -22,7 +22,7 @@ function App() {
   
         let result = new Date(endOfStartDateMonth);
         result = new Date(result.getFullYear() + +years , result.getMonth() + +months + 1, 0)
-        setExpDate(result.toLocaleDateString("fr-CA"))
+        setExpDate(result.toLocaleDateString("en-US"))
       }
     }
 
@@ -56,14 +56,14 @@ function App() {
   }
 
   return (
-    <div className="bg-emerald-100 min-w-screen min-h-screen flex flex-col justify-end sm:justify-center items-center pt-8 sm:pb-8">
-      <div className="text-xl mb-8">
+    <div className="flex flex-col items-center justify-end min-h-screen pt-8 bg-emerald-100 min-w-screen sm:justify-center sm:pb-8">
+      <div className="mb-8 text-xl">
         EXP DATE
       </div>
       <div className="md:flex sm:gap-8 bg-white w-full h-full sm:h-auto sm:min-w-[640px] sm:w-auto p-8 md:p-16 rounded-t-xl sm:rounded-lg drop-shadow-2xl">
         <div className="mb-6 md:mb-0 md:w-1/2">
           <StartDate startDate={startDate} onStartDateChange={e => setStartDate(e.target.value)} />
-          <button className="block text-emerald-600 mb-6 text-sm" role="link" onClick={e => setStartDate(today)}>Today</button>
+          <button className="block mb-6 text-sm text-emerald-600" role="link" onClick={e => setStartDate(today)}>Today</button>
           <span className="inline-block mb-4">Retention Period</span>
           <Input id="months" label="Months" inputType="number" value={months || ''} onChange={onMonths} />
           <Input id="years" label="Years" inputType="number" value={years || ''} onChange={onYears} />
