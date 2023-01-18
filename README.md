@@ -1,3 +1,20 @@
+# Expiration Date Calculator
+This **expiration date calulcator** was built as a custom solution for quickly determining image usage rights deadlines, replacing clunky one-size-fits-all time and date calculators. The expiration date is automatically calculated as soon as a start date and retention period are entered/changed and users can quickly copy it to their clipboard in one click. 
+
+The expiration date is calculated by rounding the start date to the end of the month, adding the given months and/or years, and rounding the result the end of the month, per industry standard.
+
+<img src="https://drive.google.com/uc?export=view&id=1qB4Jf_bSsviU6zf29UbOPjuBardWpi3G" alt="A screen recording demo of the expiration date calculator web app" width="600px"/>
+
+**Try it out:** [https://exp-date-calculator.netlify.app](https://exp-date-calculator.netlify.app)
+
+## How It's Made:
+
+**Tech used:** React, TailwindCSS
+
+## Optimizations
+
+This app was designed with a responsive, mobile-first layout for easier, faster UX on all devices.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
