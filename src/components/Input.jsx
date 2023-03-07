@@ -1,12 +1,12 @@
 const Input = ({ label, inputType, id, value, onChange }) => {
   return (
     <div className="flex flex-col">
-      <label className="text-sm mb-2" htmlFor={id}>
+      <label className="mb-2 text-sm tracking-wide text-white" htmlFor={id}>
         {label}
       </label>
       <input
         value={value}
-        className="bg-slate-100 rounded-md focus-visible:outline-emerald-500 focus:outline-emerald-500 focus-visible:bg-white focus:bg-white p-2 mb-2 pl-4"
+        className="p-2 pl-4 mb-2 rounded-md bg-slate-100 focus-visible:outline-[#D9FF6B] focus:outline-[#D9FF6B] focus-visible:bg-white focus:bg-white"
         id={id}
         type={inputType}
         onChange={onChange}

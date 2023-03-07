@@ -54,15 +54,15 @@ function App() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-end min-h-screen pt-8 bg-emerald-100 min-w-screen sm:justify-center sm:pb-8">
-      <div className="mb-8 text-2xl sm:mt-[-60px]">
-        EXP DATE
+    <div className="flex flex-col items-center justify-end min-h-screen pt-8 bg-white min-w-screen sm:justify-center sm:pb-8">
+      <div className="mb-8 font-bold text-3xl tracking-wider sm:mt-[-60px]">
+        Expiration Date Calculator
       </div>
-      <div className="md:flex sm:gap-8 bg-white w-full h-full sm:h-auto sm:min-w-[640px] sm:w-auto p-8 md:p-16 rounded-t-xl sm:rounded-lg drop-shadow-2xl">
-        <div className="mb-6 md:mb-0 md:w-1/2">
+      <div className="md:flex sm:gap-8 bg-black w-full h-full sm:h-auto sm:min-w-[640px] sm:w-auto p-8 md:p-16 rounded-t-xl sm:rounded-xl drop-shadow-2xl max-w-[740px]">
+        <div className="mb-6 md:mb-0">
           <StartDate startDate={startDate} onStartDateChange={e => setStartDate(e.target.value)} />
-          <button className="block mb-6 text-sm text-emerald-600" role="link" onClick={e => setStartDate(today)}>Today</button>
-          <span className="inline-block mb-4">Retention Period</span>
+          <button className="block mb-6 text-sm text-[#D9FF6B]" role="link" onClick={e => setStartDate(today)}>Today</button>
+          <span className="inline-block mb-4 font-medium tracking-wide text-white">Retention Period</span>
           <Input id="months" label="Months" inputType="number" value={months || ''} onChange={onMonths} />
           <Input id="years" label="Years" inputType="number" value={years || ''} onChange={onYears} />
         </div>

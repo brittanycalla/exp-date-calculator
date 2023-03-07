@@ -2,14 +2,16 @@ import Button from "./Button"
 
 const Calculation = ({ expDate, copyMessage, onCopyExpDate, onReset }) => {
   return (
-    <div className="flex flex-col justify-center gap-6 bg-emerald-900 rounded-xl sm:rounded-lg text-white p-8 md:w-[30vw]">
-      <div className="flex flex-col mb-4">
-        <span className="mb-2">Expiration Date</span>
-        <span className="mb-4 min-h-[36px] text-3xl">{expDate}</span>
-        <span className="text-sm text-emerald-300 min-h-[20px]">{copyMessage}</span>
+    <div className="flex flex-col justify-between p-8 text-white bg-gradient-to-tr from-[#D9FF6B] to-[#18D5FF] rounded-xl sm:rounded-lg md:h-[320px] md:w-[320px]">
+      <div className="flex flex-col">
+        <span className="mb-4 tracking-wide text-black">Expiration Date</span>
+        <span className="mb-4 h-[44px] text-[44px] font-bold text-black self-center">{expDate}</span>
+        <span className="text-sm text-black mt-2 min-h-[20px]">{copyMessage}</span>
       </div>
-      <Button text="Copy" handleClick={onCopyExpDate} />
-      <Button text="Reset" handleClick={onReset}/>
+      <div className="flex flex-col gap-4">
+        <Button  text="Copy" bgColor="bg-black" handleClick={onCopyExpDate} />
+        <Button text="Reset" textColor="black" handleClick={onReset}/>
+      </div>
     </div>
   )
 }

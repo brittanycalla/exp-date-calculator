@@ -11,7 +11,7 @@ export const Button = ({ text, textColor, bgColor, handleClick }) => {
 
 Button.defaultProps = {
   textColor: "white",
-  bgColor: "bg-emerald-300",
+  bgColor: "bg-white",
 };
 
 export default Button;
