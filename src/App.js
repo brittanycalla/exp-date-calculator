@@ -58,7 +58,7 @@ function App() {
       <div className="mb-8 font-bold text-3xl tracking-wider text-center sm:mt-[-60px]">
         Expiration Date Calculator
       </div>
-      <div className="md:flex sm:gap-8 bg-black w-full h-full sm:h-auto sm:min-w-[640px] sm:w-auto p-8 md:p-16 rounded-t-xl sm:rounded-xl drop-shadow-2xl max-w-[740px]">
+      <div className="md:flex sm:gap-8 bg-black w-full h-full sm:h-auto sm:min-w-[640px] sm:w-auto p-8 md:p-16 rounded-t-3xl sm:rounded-2xl drop-shadow-2xl max-w-[740px]">
         <div className="mb-6 md:mb-0">
           <StartDate startDate={startDate} onStartDateChange={e => setStartDate(e.target.value)} />
           <button className="block mb-6 text-sm text-[#D9FF6B]" role="link" onClick={e => setStartDate(today)}>Today</button>

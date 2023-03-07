@@ -2,7 +2,7 @@ import Button from "./Button"
 
 const Calculation = ({ expDate, copyMessage, onCopyExpDate, onReset }) => {
   return (
-    <div className="flex flex-col justify-between p-8 text-white bg-gradient-to-tr from-[#D9FF6B] to-[#18D5FF] rounded-xl sm:rounded-lg md:h-[320px] md:w-[320px]">
+    <div className="flex flex-col justify-between p-8 text-white bg-gradient-to-tr from-[#D9FF6B] to-[#18D5FF] rounded-xl sm:rounded-xl md:h-[320px] md:w-[320px]">
       <div className="flex flex-col">
         <span className="mb-4 tracking-wide text-black">Expiration Date</span>
         <span className="mb-4 h-[44px] text-[44px] font-bold text-black self-center">{expDate}</span>
