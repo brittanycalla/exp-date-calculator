@@ -55,7 +55,7 @@ function App() {
 
   return (
     <div className="flex flex-col items-center justify-end min-h-screen pt-8 bg-white min-w-screen sm:justify-center sm:pb-8">
-      <div className="mb-8 font-bold text-3xl tracking-wider sm:mt-[-60px]">
+      <div className="mb-8 font-bold text-3xl tracking-wider text-center sm:mt-[-60px]">
         Expiration Date Calculator
       </div>
       <div className="md:flex sm:gap-8 bg-black w-full h-full sm:h-auto sm:min-w-[640px] sm:w-auto p-8 md:p-16 rounded-t-xl sm:rounded-xl drop-shadow-2xl max-w-[740px]">
