@@ -1,5 +1,5 @@
 # Expiration Date Calculator
-This **expiration date calulcator** was built as a custom solution for quickly determining image usage rights deadlines, replacing clunky one-size-fits-all time and date calculators. The expiration date is automatically calculated as soon as a start date and retention period are entered/changed and users can quickly copy it to their clipboard in one click. 
+This **expiration date calculator** was built as a custom solution for quickly determining image usage rights deadlines, replacing clunky one-size-fits-all time and date calculators. The expiration date is automatically calculated as soon as a start date and retention period are entered/changed and users can quickly copy it to their clipboard in one click. 
 
 The expiration date is calculated by rounding the start date to the end of the month, adding the given months and/or years, and rounding the result the end of the month, per industry standard.
 
